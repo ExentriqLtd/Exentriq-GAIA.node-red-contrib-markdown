@@ -1,0 +1,80 @@
+<script type="text/javascript">
+    RED.nodes.registerType('remove-md',{
+        category: 'function',
+        color: '#FFF',
+        defaults: {
+            name: {value:""},
+        },
+        inputs:1,
+        outputs:1,
+        icon: "markdown.png",
+        label: function() {
+            return this.name||"remove";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="remove-md">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="remove-md">
+    <p>A node that will remove (strip) Markdown formatting from a text.</p>
+</script>
+
+<script type="text/javascript">
+    RED.nodes.registerType('front-matter-md',{
+        category: 'function',
+        color: '#FFF',
+        defaults: {
+            name: {value:""},
+        },
+        inputs:1,
+        outputs:1,
+        icon: "markdown.png",
+        label: function() {
+            return this.name||"front matter";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="front-matter-md">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="front-matter-md">
+    <p>A Markdown front matter parser.</p>
+</script>
+
+<script type="text/javascript">
+    RED.nodes.registerType('utils-md',{
+        category: 'function',
+        color: '#FFF',
+        defaults: {
+            name: {value:""},
+        },
+        inputs:1,
+        outputs:1,
+        icon: "markdown.png",
+        label: function() {
+            return this.name||"utils";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="utils-md">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="utils-md">
+    <p>A Markdown utility to extract clean text and frontmatter from markdown.</p>
+</script>

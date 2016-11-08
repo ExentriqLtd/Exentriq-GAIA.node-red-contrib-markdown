@@ -1,0 +1,21 @@
+{
+  "name": "node-red-contrib-markdown-utils",
+  "version": "1.0.0",
+  "description": "Node-RED node for Markdown utils",
+  "keywords": [
+    "node-red",
+    "markdown"
+  ],
+  "author": "Calogero Crapanzano <calosan@libero.it>",
+  "dependencies": {
+    "gray-matter": "^2.1.0",
+    "remark": "^6.2.0",
+    "remove-markdown": "^0.1.0",
+    "strip-markdown": "^3.0.0"
+  },
+  "node-red": {
+    "nodes": {
+      "remove-md": "markdown-utils.js"
+    }
+  }
+}
